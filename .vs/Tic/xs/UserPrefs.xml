@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{B0F433D8-E824-4B69-9FAF-1900A8DF2DA5}|Default">
+  <MonoDevelop.Ide.ItemProperties.Tic PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="Views/Home/Index.cshtml" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Controllers/HomeController.cs" Line="85" Column="14" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="13" Column="7" />
+      <File FileName="wwwroot/css/site.css" Line="36" Column="27" />
+      <File FileName="Models/State.cs" Line="27" Column="29" />
+      <File FileName="Views/Home/Update.cshtml" Line="9" Column="1" />
+      <File FileName="Views/Home/Winner.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Tic" expanded="True">
+            <Node name="Tic" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>topRow</Value>
+          <Value>tl</Value>
+          <Value>tm</Value>
+          <Value>tr</Value>
+          <Value>isWinner</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

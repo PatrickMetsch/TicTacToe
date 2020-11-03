@@ -1,0 +1,55 @@
+﻿.jumbotron {
+    text-align: center;
+    background-color: cyan;
+    margin-bottom: 5px;
+}
+
+.jumbotron h1 {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.tic-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tic-row a {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.tic-row a:not(.disabled):hover {
+    background-color: lightcyan;
+    border: 1px solid red;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #e9e9e9;
+}
+
+.primary-header,
+.secondary-header,
+.newGame {
+    text-align: center;
+}
+
+.secondary-header {
+    background-color: limegreen;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}

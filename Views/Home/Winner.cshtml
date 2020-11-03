@@ -1,0 +1,14 @@
+﻿@model State
+@{
+    ViewData["Title"] = "Home Page";
+    string stateString = Context.Session.GetString("state");
+    State state = JsonConvert.DeserializeObject<State>(stateString);
+}
+@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+
+<h3 class="secondary-header">
+    <span>Winner: </span>
+    <span> @state.Character</span>
+</h3>
+<h4 class="newGame"><a asp-action="Index">New Game</a></h4>

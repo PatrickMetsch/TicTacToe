@@ -1,0 +1,41 @@
+﻿
+@model State
+@{
+    ViewData["Title"] = "Home Page";
+    string stateString = Context.Session.GetString("state");
+    State state = JsonConvert.DeserializeObject<State>(stateString);
+}
+@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tic</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    @RenderBody()
+    <div class="tic-row">
+        <a class="@((state.TopLeft == "") ? "" : "disabled")" asp-action="Update" asp-route-id="TopLeft">@state.TopLeft</a>
+        <a class="@((state.TopMiddle == "") ? "" : "disabled")" asp-action="Update" asp-route-id="TopMiddle">@state.TopMiddle</a>
+        <a class="@((state.TopRight == "") ? "" : "disabled")" asp-action="Update" asp-route-id="TopRight">@state.TopRight</a>
+    </div>
+    <div class="tic-row">
+        <a class="@((state.CenterLeft == "") ? "" : "disabled")" asp-action="Update" asp-route-id="CenterLeft">@state.CenterLeft</a>
+        <a class="@((state.CenterMiddle == "") ? "" : "disabled")" asp-action="Update" asp-route-id="CenterMiddle">@state.CenterMiddle</a>
+        <a class="@((state.CenterRight == "") ? "" : "disabled")" asp-action="Update" asp-route-id="CenterRight">@state.CenterRight</a>
+    </div>
+    <div class="tic-row">
+        <a class="@((state.BottomLeft == "") ? "" : "disabled")" asp-action="Update" asp-route-id="BottomLeft">@state.BottomLeft</a>
+        <a class="@((state.BottomMiddle == "") ? "" : "disabled")" asp-action="Update" asp-route-id="BottomMiddle">@state.BottomMiddle</a>
+        <a class="@((state.BottomRight == "") ? "" : "disabled")" asp-action="Update" asp-route-id="BottomRight">@state.BottomRight</a>
+    </div>
+</body>
+</html>
